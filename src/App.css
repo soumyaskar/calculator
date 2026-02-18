@@ -1,0 +1,56 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* Center l */
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+}
+
+/* Calculator container */
+.calculator {
+  width: 260px;
+  padding: 10px;
+  border: 1px solid #000;
+}
+
+/* Display */
+.display {
+  height: 50px;
+  margin-bottom: 10px;
+  padding: 8px;
+  font-size: 24px;
+  text-align: right;
+  border: 1px solid #000;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* Buttons area */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+}
+
+/* Buttons */
+.buttons button {
+  height: 45px;
+  font-size: 16px;
+  border: 1px solid #000;
+  background: #fff;
+  cursor: pointer;
+}
+
+/* Operators (just text difference, no color) */
+.operator {
+  font-weight: bold;
+}
